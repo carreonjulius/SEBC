@@ -6,6 +6,7 @@
 `1`
 
 2. Show the mount attributes of all volumes
+<code>
 	`[root@ip-172-31-3-225 ~]# cat /etc/fstab`
 	`LABEL=centos_root               /        ext4      defaults         0 0`
 	`devpts     /dev/pts  devpts  gid=5,mode=620   0 0`
@@ -14,7 +15,7 @@
 	`sysfs      /sys      sysfs   defaults         0 0`
 	`/dev/xvdf /mnt/disk1 ext4 defaults 0 0`
 	`/dev/xvdg /mnt/disk2 ext4 defaults 0 0`
-
+</code>
 3. Show the reserve space of any non-root, ext-based volumes
 	`[root@ip-172-31-3-225 ~]# df -Th`
 	`Filesystem     Type   Size  Used Avail Use% Mounted on`
