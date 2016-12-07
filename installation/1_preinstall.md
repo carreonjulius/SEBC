@@ -4,8 +4,8 @@
 **1. Check vm.swappiness on all your nodes. Set the value to 1 if necessary**  
 
 
-[root@ip-172-31-3-225 ~]# cat /proc/sys/vm/swappiness  
-1  
+	[root@ip-172-31-3-225 ~]# cat /proc/sys/vm/swappiness  
+	1  
 
 
 **2. Show the mount attributes of all volumes**  
