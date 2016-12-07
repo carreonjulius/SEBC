@@ -2,13 +2,12 @@
 # <center> 
 
 1. Check vm.swappiness on all your nodes. Set the value to 1 if necessary  
-<code>
+<code>  
 [root@ip-172-31-3-225 ~]# cat /proc/sys/vm/swappiness  
 1  
-</code>
-  
+</code>  
 2. Show the mount attributes of all volumes  
-<code>
+<code>  
 	[root@ip-172-31-3-225 ~]# cat /etc/fstab  
 	LABEL=centos_root               /        ext4      defaults         0 0  
 	devpts     /dev/pts  devpts  gid=5,mode=620   0 0  
@@ -17,9 +16,9 @@
 	sysfs      /sys      sysfs   defaults         0 0  
 	/dev/xvdf /mnt/disk1 ext4 defaults 0 0  
 	/dev/xvdg /mnt/disk2 ext4 defaults 0 0  
-</code>
+</code>  
 3. Show the reserve space of any non-root, ext-based volumes  
-<code>
+<code>  
 	[root@ip-172-31-3-225 ~]# df -Th  
 	Filesystem     Type   Size  Used Avail Use% Mounted on  
 	/dev/xvde      ext4    30G   18G   11G  64% /  
@@ -27,18 +26,18 @@
 	/dev/xvdf      ext4   9.9G  151M  9.2G   2% /mnt/disk1  
 	/dev/xvdg      ext4   9.9G  151M  9.2G   2% /mnt/disk2  
 	cm_processes   tmpfs  7.4G  5.0M  7.4G   1% /var/run/cloudera-scm-agent/process  
-</code>
+</code>  
 4. Show that transparent hugepages is disabled  
-<code>
+<code>  
 	[root@ip-172-31-3-225 ~]# grep -i HugePages_Total /proc/meminfo  
 	HugePages_Total:       0  
 	[root@ip-172-31-3-225 ~]# cat /proc/sys/vm/nr_hugepages  
 	0  
 	[root@ip-172-31-3-225 ~]# grep AnonHugePages /proc/meminfo  
 	AnonHugePages:         0 kB  
-</code>
+</code>  
 5. Report the network interface attributes  
-<code>
+<code>  
 	[root@ip-172-31-3-225 ~]# ifconfig  
 	eth0      Link encap:Ethernet  HWaddr 02:13:7C:D6:C9:71  
           inet addr:172.31.3.225  Bcast:172.31.15.255  Mask:255.255.240.0  
@@ -60,7 +59,7 @@
           RX bytes:682427062 (650.8 MiB)  TX bytes:682427062 (650.8 MiB)  
 </code>  
 6. Show forward and reverse host lookups using getent and nslookup  
-<code>
+<code>  
 	getent  
 	172.31.3.225    ip-172-31-3-225.ap-southeast-1.compute.internal  
 	172.31.3.226    ip-172-31-3-226.ap-southeast-1.compute.internal  
@@ -103,15 +102,15 @@
 	Non-authoritative answer:  
 	Name:   ip-172-31-3-229.ap-southeast-1.compute.internal  
 	Address: 172.31.3.229  
-</code>
+</code>  
 7. Verify the nscd service is running  
-<code>
+<code>  
 	[root@ip-172-31-3-225 ~]# service ntpd status  
 	ntpd (pid  7054) is running...  
-</code>
+</code>  
 8. Verify the ntpd service is running  
-<code>
+<code>  
 	[root@ip-172-31-3-225 ~]# service ntpd status  
 	ntpd (pid  7054) is running...  
-</code>
+</code>  
 </code>
