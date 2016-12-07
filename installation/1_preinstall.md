@@ -1,14 +1,14 @@
 # <center>System Configuration Checks 
 # <center> 
 
-1. Check vm.swappiness on all your nodes. Set the value to 1 if necessary  
+**1. Check vm.swappiness on all your nodes. Set the value to 1 if necessary**  
 
 
 [root@ip-172-31-3-225 ~]# cat /proc/sys/vm/swappiness  
 1  
 
 
-2. Show the mount attributes of all volumes  
+**2. Show the mount attributes of all volumes**  
 
 
 	[root@ip-172-31-3-225 ~]# cat /etc/fstab  
@@ -21,7 +21,7 @@
 	/dev/xvdg /mnt/disk2 ext4 defaults 0 0  
 
 
-3. Show the reserve space of any non-root, ext-based volumes  
+**3. Show the reserve space of any non-root, ext-based volumes**  
 
 
 	[root@ip-172-31-3-225 ~]# df -Th  
@@ -33,7 +33,7 @@
 	cm_processes   tmpfs  7.4G  5.0M  7.4G   1% /var/run/cloudera-scm-agent/process  
 
 
-4. Show that transparent hugepages is disabled  
+**4. Show that transparent hugepages is disabled**  
 
 
 	[root@ip-172-31-3-225 ~]# grep -i HugePages_Total /proc/meminfo  
@@ -44,7 +44,7 @@
 	AnonHugePages:         0 kB  
 
 
-5. Report the network interface attributes  
+**5. Report the network interface attributes**  
 
 
 	[root@ip-172-31-3-225 ~]# ifconfig  
@@ -68,7 +68,7 @@
           RX bytes:682427062 (650.8 MiB)  TX bytes:682427062 (650.8 MiB)  
 
 
-6. Show forward and reverse host lookups using getent and nslookup  
+**6. Show forward and reverse host lookups using getent and nslookup**  
 
 
 	getent  
@@ -115,14 +115,14 @@
 	Address: 172.31.3.229  
 
 
-7. Verify the nscd service is running  
+**7. Verify the nscd service is running**  
 
 
 	[root@ip-172-31-3-225 ~]# service ntpd status  
 	ntpd (pid  7054) is running...  
 
 
-8. Verify the ntpd service is running  
+**8. Verify the ntpd service is running**  
 
 
 	[root@ip-172-31-3-225 ~]# service ntpd status  
