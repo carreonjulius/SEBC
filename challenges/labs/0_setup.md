@@ -1,3 +1,5 @@
+**AWS Instances**
+
 ```
 Region			Instance ID	OS
 ap-southeast-1	i-5326e6f4	CentOS 6.5
@@ -126,3 +128,11 @@ extras                   CentOS-6 - Extras                       62
 updates                  CentOS-6 - Updates                     686
 repolist: 7,444
 ```
+
+**"/etc/passwd/"**
+raffles:x:2700:2802::/home/raffles:/bin/bash
+orchard:x:2800:2801::/home/orchard:/bin/bash
+
+**"/etc/group/"**
+shops:x:2801:
+walks:x:2802:
