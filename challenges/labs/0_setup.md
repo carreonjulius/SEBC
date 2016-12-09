@@ -9,8 +9,9 @@ ap-southeast-1	i-5626e6f1	CentOS 6.5
 ap-southeast-1	i-5626e6f1	CentOS 6.5
 ```
 
+
+**Node 1 - ip-172-31-1-105**
 ```
-Node 1 - ip-172-31-1-105
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvde        30G  806M   28G   3% /
 tmpfs           7.4G     0  7.4G   0% /dev/shm
@@ -33,8 +34,9 @@ updates                  CentOS-6 - Updates                     686
 repolist: 7,444
 ```
 
+
+**Node 2 - ip-172-31-1-106**
 ```
-Node 2 - ip-172-31-1-106
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvde        30G  800M   28G   3% /
 tmpfs           7.4G     0  7.4G   0% /dev/shm
@@ -57,8 +59,9 @@ updates                  CentOS-6 - Updates                     686
 repolist: 7,444
 ```
 
+
+**Node 3 - ip-172-31-1-107**
 ```
-Node 3 - ip-172-31-1-107
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvde        30G  800M   28G   3% /
 tmpfs           7.4G     0  7.4G   0% /dev/shm
@@ -81,8 +84,9 @@ updates                  CentOS-6 - Updates                     686
 repolist: 7,444
 ```
 
+
+**Node 4 - ip-172-31-1-108**
 ```
-Node 4 - ip-172-31-1-108
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvde        30G  800M   28G   3% /
 tmpfs           7.4G     0  7.4G   0% /dev/shm
@@ -105,8 +109,9 @@ updates                  CentOS-6 - Updates                     686
 repolist: 7,444
 ```
 
+
+**Node 5 - ip-172-31-1-109**
 ```
-Node 5 - ip-172-31-1-109
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvde        30G  801M   28G   3% /
 tmpfs           7.4G     0  7.4G   0% /dev/shm
