@@ -129,10 +129,12 @@ updates                  CentOS-6 - Updates                     686
 repolist: 7,444
 ```
 
-**"/etc/passwd/"**
+```
+#/etc/passwd/
 raffles:x:2700:2802::/home/raffles:/bin/bash
 orchard:x:2800:2801::/home/orchard:/bin/bash
 
-**"/etc/group/"**
+#/etc/group/
 shops:x:2801:
 walks:x:2802:
+```
